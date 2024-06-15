@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    border: 2px solid blue;
+}
+.header{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(3, 87, 32);
+} 
+.header .socialmedia{
+    display: flex;
+    justify-content: flex-end;
+}
+.header .socialmedia a{
+    font-size:20px;
+}
+.header .socialmedia i{
+    color: rgba(245, 245, 245, 0.858);
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.nav{
+    position: absolute;
+    margin-top: 40px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(14, 100, 25);   
+    /* background-color: white; */
+}
+.nav .logo{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+.nav .navbar{
+    z-index: 4;
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    margin-left: 35%;
+    border: 2px solid black; 
+}
+.nav .logo img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    /* mix-blend-mode: multiply;
+   filter: contrast(2); */
+}
+.menu{
+    position: absolute;
+    margin-top: 140px;
+    height: 1600px;
+    width: 100%;
+}
+.menu .chngphoto i{
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+    margin-top: 140px;
+    display: hidden;
+    font-size: 20px;
+    color:antiquewhite;
+    cursor: pointer;
+    transition: all .3s;
+    opacity: 0;
+}
+.menu .chngphoto #rightchnge{
+    margin-left: 99%;
+    display:hidden;
+    font-size: 20px;
+    color:antiquewhite;
+}
+.mainphoto:hover #leftchnge{
+    margin-left: 3%;
+    opacity: 1;
+}
+.mainphoto:hover #rightchnge{
+    margin-left: 96%;
+    opacity: 1;
+}
+.menu .photo{
+    z-index: 1;
+    position: absolute;
+    height: 360px;
+    width: 100%;
+    background-size: cover;
+    transition: 0.2s linear;
+}
+#button{
+    z-index: 2;
+    position: absolute;
+    margin-top: 175px;
+    margin-left: 200px;
+}
+.menu .photopara p{
+    position: absolute;
+    z-index: 2;
+    font-size: 25px;
+    font-family: congratulations_new;
+    color: #c3cb7b;
+    margin-top: 140px;
+    margin-left: 170px;
+    cursor: pointer;
+}
+.menu .butn{
+    height: 40px;
+    width: 200px;
+    border: 2px solid black;
+    background-color:#482970;
+    border-color: #482970;
+    border-radius: 10px;
+}
+#button .butn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#button .butn p{
+    font-size: 12px;
+    padding-right: 5px;
+    color: white;
+    display: inline;
+ 
+}
+#button .butn i{
+    font-size: 12px;
+    font-weight: bolder;
+    color: #ab6aff;
+}
+.menu .photo img{
+    
+    height: 100%;
+    width: 100%;
+}
+.menu .text1{
+    position: absolute;
+    margin-top: 335px;
+    height: 220px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+.menu .text1 .text1in {
+    font-size: 22px;
+    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: bold;
+    margin: 90px 20% 10px 20%;
+}
+#text1para{
+    color: #00651f;
+}
+.menu .photodiv{
+    position: relative;
+    margin-top: 555px;
+    height: 575px;
+    width: 100%; 
+    display: flex;
+    overflow: hidden;
+}
+.menu .photodiv div img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.menu .photodiv .subdiv4 img{
+    width: 100%;
+}
+.subdiv1{
+    width: 25%;
+    margin-right: 8px;
+}
+.subdiv2{
+    width: 24%;
+    margin-right: 8px;
+}
+.subdiv3{
+    width: 24%;
+    margin-right: 8px;
+}
+.subdiv4{
+    width: 25%;
+    
+}
+.sbdv1{
+    height: 100%;
+    width: 99.7%;
+    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+    color: rgb(248, 231, 231);
+    position: relative;
+    bottom: 0px;
+    padding-right: 2px;
+    transition: all 1.3s;
+    background-color: #482970;
+}
+.sbdv1 h1{
+    padding-top: 200px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+.sbdv1 p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.subdiv1:hover .sbdv1{
+    bottom: 578px; 
+    opacity: 0.9;
+}
+.sbdv1 button{
+    height: 39px;
+    width: 140px;
+    border: 2px solid black;
+    background-color:#105805;
+    border-color: #482970;
+    color: whitesmoke ;
+   font-size: 13px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 70px;
+}
+.sbdv2{
+    height: 100%;
+    width: 99.7%;
+    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+    color: rgb(248, 231, 231);
+    position: relative;
+    bottom: 0px;
+    /* left: 5px; */
+    padding-right: 2px;
+    transition: all 1.3s;
+    background-color: #482970;
+    
+}
+.sbdv2 h1{
+    padding-top: 200px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+.sbdv2 p{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+.subdiv2:hover .sbdv2{
+    bottom: 578px; 
+    opacity: 0.9; 
+}
+.sbdv2 button{
+    height: 39px;
+    width: 140px;
+    border: 2px solid black;
+    background-color:#105805;
+    border-color: #482970;
+    color: whitesmoke ;
+   font-size: 13px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 80px;
+}
+.sbdv3{
+    height: 100%;
+    width: 99.7%;
+    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+    color: rgb(248, 231, 231);
+    position: relative;
+    bottom: 0px;
+    padding-right: 2px;
+    transition: all 1.3s;
+    background-color: #482970;
+}
+.sbdv3 h1{
+    padding-top: 200px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+.sbdv3 p{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+.subdiv3:hover .sbdv3{
+    bottom: 578px; 
+    opacity: 0.9;
+}
+.sbdv3 button{
+    height: 39px;
+    width: 140px;
+    border: 2px solid black;
+    background-color:#105805;
+    border-color: #482970;
+    color: whitesmoke ;
+   font-size: 13px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 70px;
+}
+.sbdv4{
+    height: 100%;
+    width: 99.7%;
+    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+    color: rgb(248, 231, 231);
+    position: relative;
+    bottom: 0px;
+    /* left: 5px; */
+    padding-right: 2px;
+    transition: all 1.3s;
+    background-color: #482970;
+}
+.sbdv4 h1{
+    padding-top: 200px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+.sbdv4 p{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.subdiv4:hover .sbdv4{
+    bottom: 578px; 
+    opacity: 0.9;
+}
+.sbdv4 button{
+    height: 39px;
+    width: 140px;
+    border: 2px solid black;
+    background-color:#105805;
+    border-color: #482970;
+    color: whitesmoke ;
+   font-size: 13px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 70px;
+}
+
+.menu .scndtxt{
+    position: absolute;
+    margin-top: 0px;
+    height: 270px;
+    width: 100%;
+    background-color: white;
+    font-size: 40px;
+}
+.menu .scndtxt .text1in{
+    font-size: 22px;
+    font-family: Helvetica,Arial,Lucida,sans-serif;
+    font-weight:bold;
+    margin: 80px 20% 10px 20%;
+    text-align: center;
+}
+#text2para{
+    color: #00651f;
+}
+.menu .subscribe{
+    position: absolute;
+    margin-top: 270px;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(72,41,112,0.23);
+}
+.menu .subscribe .subsin{
+    height: 100px;
+    width: 40%;
+    /* border: 2px solid black; */
+    margin: 50px 30% 50px 30%;
+    
+}
+.menu .subscribe .subsin p{
+    font-size: 35px;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    color: #482970;
+    font-weight: 600;
+}
+.menu .subscribe .subsin .subbtn{
+    width: 120px;
+    height: 40px;
+    background-color: #482970;
+    border: 2px solid rgba(72,41,112,0.23);
+    margin-top: 9px;
+    margin-left: 170px;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.menu .subscribe .subsin .subbtn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#btnonep{
+    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+    text-align: center;
+    display: inline;
+    font-size: 11px;
+    color: white;
+    padding-left: 5px;
+    font-weight: 100;
+    text-align: center;
+}
+.menu .subscribe .subsin .subbtn i{
+    font-size: 12px;
+    font-weight: bolder;
+    padding-left: 10px;
+    color: #ab6aff;
+}
+.footer{
+    position: absolute;
+    margin-top: 1740px;
+    height: 270px;
+    width: 100%;
+    background-color: rgb(14, 100, 25);
+}
+.footer .footone{
+    position: absolute;
+    height: 82%;
+    width: 100%;
+}
+.footer .footone .footlogo{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    display: inline;
+}
+.footer .footone .footlogo img{
+    height: 125px;
+    width: 125px;
+    background-size: cover;
+    padding: 15px 0 0 150px;
+}
+.footer .footone .footlink{
+    display: inline;
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    margin-left: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.footer .footone .footlink .folkdiv{ 
+    /* border: 1px solid black; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+}
+.footer .footone .footlink .folkdiv .folkdivin{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    padding-top: 26px;
+    display: flex;
+    flex-direction: column;
+}
+.footer .footone .footlink .folkdiv .folkdivin a{
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+}
+.footer .footone .footlink .folkdiv .folkdivin a:hover{
+    opacity: 0.6;
+}
+.footer .foottwo{
+   position: absolute;
+   height: 18%;
+    width: 100%;
+   margin-top: 228.8px;
+   padding-top: 6px;
+   background-color: #00651f;
+}
+.footer .foottwo p{
+    font-size: 13px;
+    color: white;
+    display: inline;
+    padding: 8px 440px 0 200px;
+}
+.footer .foottwo a{
+    margin-left: 15px;
+    font-size: 22px;
+    color: white;
+    transition: all 0.8s;
+}
+.footer .foottwo a:hover{
+    font-size: 21px;
+    opacity: 0.6;
+    cursor: pointer;
+}
